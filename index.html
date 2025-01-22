@@ -32,7 +32,7 @@
             </div>
         </nav>
     </header>
-
+    <div class="sections">
         <section class="filters">
             <h2>Filters</h2>
             <label for="game-preference" >Game Preference:</label>
@@ -42,15 +42,15 @@
                 <option value="starfinder">Starfinder</option>
             </select>
 
+            <label for="availability">Availability:</label>
+            <input type="date" id="availability" >
+
             <label for="geolocation">Geolocation:</label>
             <input type="text" id="geolocation" placeholder="Enter your location" >
 
             <div id="map"></div>
-
-            <label for="availability">Availability:</label>
-            <input type="date" id="availability" >
         </section>
-
+    </div>
         <!-- <section class="profiles">
             <h2>Player Profiles</h2>
             <div id="profile-list">
