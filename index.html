@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Nicolò Natali Portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Sito web personale di Nicolò Natali">
+    <meta property="og:url" content="https://brnmeenne.github.io/Nicol-N.-Personal-Website/">
+    <meta property="og:image" content="/Assets/img/Enne_logo.png"> 
+    <link rel="icon" href="Assets/img/roll1.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">    <title>GINDR - The Tinder of RPGs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+
+</head>
+<body>
+    <main class="background">
+    <header>
+        <nav>  
+            <div class="imglogo">       
+             <img src="Assets/img/ginder white boards.png" alt="Logo Ginder" class="logo-img">
+             <h1 class="titlemain">
+                La piattaforma online per chi cerca avventure e compagni di GDR
+            </h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search for players, game masters, or groups">
+                <button id="search-btn">Search</button>
+            </div>
+        </nav>
+    </header>
+
+        <section class="filters">
+            <h2>Filters</h2>
+            <label for="game-preference" >Game Preference:</label>
+            <select id="game-preference">
+                <option value="dnd">Dungeons & Dragons</option>
+                <option value="pathfinder">Pathfinder</option>
+                <option value="starfinder">Starfinder</option>
+            </select>
+
+            <label for="geolocation">Geolocation:</label>
+            <input type="text" id="geolocation" placeholder="Enter your location" >
+
+            <div id="map"></div>
+
+            <label for="availability">Availability:</label>
+            <input type="date" id="availability" >
+        </section>
+
+        <!-- <section class="profiles">
+            <h2>Player Profiles</h2>
+            <div id="profile-list">
+                 Profile cards will be inserted here -->
+            <!-- </div>
+        </section> --> 
+        <footer>
+            <p>GINDER© <br> Connecting roleplayers like never before</p>
+        </footer>
+</main>
+
+<!-- SCRIPT MAPBOX GL JS -->
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoibmF0ZXNzcyIsImEiOiJjbTY4MzY2YTIwOXU2MmpzODExYWtqeGp2In0._0ihRiPeylkSliVZdKyLDA';
+
+  // Inizializziamo la mappa
+  const map = new mapboxgl.Map({
+    container: 'map', // ID del div
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [12.496366, 41.902782], // [long, lat] - Roma come esempio
+    zoom: 5
+  });
+
+  // Aggiungiamo un controllo di navigazione (zoom e rotazione)
+  map.addControl(new mapboxgl.NavigationControl());
+
+  // Esempio di marker su Roma
+  new mapboxgl.Marker()
+    .setLngLat([12.496366, 41.902782])
+    .setPopup(new mapboxgl.Popup().setHTML("<p>Qui Roma!</p>"))
+    .addTo(map);
+</script>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

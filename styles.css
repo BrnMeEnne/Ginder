@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.background {
+    background: url(Assets/img/background/pergamenadettagli.webp) center no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+}
+
+
+header {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.imglogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav img {
+ align-content: center;
+ width: 30rem;
+}
+
+.titlemain {
+    padding-bottom: 5rem;
+    font-size: 2rem;
+    font-family: "IM Fell English", serif;
+    font-weight: 800;
+    font-style: normal;
+    color: rgb(29,29,27);
+    text-shadow:
+    -1px -1px 0 rgb(255, 243, 218),
+     1px -1px 0 rgb(255, 243, 218),
+    -1px  1px 0 rgb(255, 243, 218),
+     1px  1px 0 rgb(255, 243, 218);
+}
+
+
+.search-bar input {
+    padding: 10px;
+    margin-right: 5px;
+    width: 60%;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #2980b9;
+    transition: 0.3s ease-in-out;
+}
+
+.filters {
+    padding: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(244, 244, 249, 0.5);
+    /* background: url(Assets/img/background/pergmanea.webp) center no-repeat; */
+    background-size: cover;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.filters label {
+    display: block;
+    padding: 1rem 0;
+}
+
+.filters select, .filters input {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#map {
+    width: 60%;
+    height: 200px; /* Altezza desiderata per la mappa */
+    overflow: hidden;
+  }
+
+
+.profiles {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.profiles h2 {
+    margin-top: 0;
+}
+
+#profile-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.profile-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(255, 243, 218);
+    color: rgb(29,29,27);
+    font-family: "IM Fell English", serif;
+    font-weight: 700;
+    margin-top: 5rem;
+
+}
+
+
