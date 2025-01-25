@@ -43,11 +43,15 @@ nav img {
      1px  1px 0 rgb(255, 243, 218);
 }
 
+.search-bar {
+    background-color: rgba(244, 244, 249, 0.5);
+    text-align: center;
+    padding-top: 1rem;
+}
 
 .search-bar input {
     padding: 10px;
-    margin-right: 5px;
-    width: 60%;
+    width: 70vw;
 }
 
 .search-bar button {
@@ -63,10 +67,9 @@ nav img {
     transition: 0.3s ease-in-out;
 }
 
+
 .filters {
-    padding: 2rem 0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
     background-color: rgba(244, 244, 249, 0.5);
     /* background: url(Assets/img/background/pergmanea.webp) center no-repeat; */
     background-size: cover;
@@ -82,7 +85,7 @@ nav img {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
@@ -136,7 +139,7 @@ h2 {
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 2vh;
     background-color: rgb(255, 243, 218);
     color: rgb(29,29,27);
     font-family: "IM Fell English", serif;
@@ -144,4 +147,17 @@ footer {
     margin-top: 5rem;
 }
 
+.results {
+    text-align: center;
+    margin-top: 3rem;
+    background: url(../img/background/pergmanea.webp)no-repeat center;
+
+    
+    .results h2 {
+    font-family: "IM Fell English", serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+}
 
